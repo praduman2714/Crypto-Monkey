@@ -2,6 +2,34 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Description
+
+  - Crypto-Monkey is the crypto currency app, which is made up of React, and Firebase. 
+  - It is a simple dashboard , in which the user can see there account balance and analayze there profile.
+  - This app also show the value of different crypto currency in the market.
+  - It suggest the user wherter to do trading or not.
+  - Firebase is used for authentication and authorization.
+  - Redux toolkit is used as the state-management.
+
+# Tool Used
+
+  - React JS
+  - Firebase
+  - Redux-toolkit
+  - CMC api
+
+# ScreenShot
+
+## HomePage
+![cruptoHomePage](https://github.com/praduman2714/Crypto-Monkey/assets/66240716/a43e911e-c3ae-4588-83e0-0f0a746aef3e)
+
+## Sing In Page
+![crypto-signIn](https://github.com/praduman2714/Crypto-Monkey/assets/66240716/ee3e9299-4c28-4cf1-9363-2620bc60ba7b)
+
+## Sing Up Pages
+![crypto-singUp](https://github.com/praduman2714/Crypto-Monkey/assets/66240716/b84f5f3f-3083-4e08-bfa4-ea832afd7dda)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
