@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+// Importing dependies form the react
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+// Importing redux-store
+import store from './store';
+// Imporint some of the componets
+import NavBar from './Components/NavBar/NavBar';
+import Home from './Components/Home/Home';
+import FallbackComponent from './Components/FallBack/FallBack';
+import SingIn from './Components/SingIn/SingIn';
+import SingUp from './Components/SingUp/SingUp';
+
+// Improting Styles
 import './App.css';
 
+// Implemeneting the App Componets
 function App() {
+  // Making the routere
+  const router = createBrowserRouter([
+    {path : '/', element : <NavBar /> , children: [
+      {path : '/' , element : <Home />},
+      {path : '/singUp' , element : <SingUp />},
+      {path : '/singIn' , element : <SingIn />},
+      {path : '/fallback' , element : <FallbackComponent />}
+    ]}
+    
+  ])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+        <div className="App">
+          <RouterProvider router={router} />
+        </div>
+    </Provider>
   );
 }
 
