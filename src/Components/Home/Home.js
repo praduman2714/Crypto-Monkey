@@ -56,7 +56,7 @@ function Home(){
 
     // handleing the default case
     if(!currentUser){
-        window.location.href = '/singIn';
+        window.location.href = 'singIn';
         return <SingIn />
     }
 
